@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TabHost
+        android:id="@+id/tbConversor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:orientation="horizontal" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/tabUniversal"
+                    android:layout_width="match_parent"
+                    android:layout_height="660dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/txtCant1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:ems="10"
+
+                        android:hint="cantidad"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/txtCant2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80dp"
+                        android:ems="10"
+
+                        android:hint="cantidad por caja "
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/txtCant3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:ems="10"
+
+                        android:hint="respuesta"
+                        android:inputType="textPersonName" />
+
+                    <Button
+                        android:id="@+id/idconver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="220dp"
+                        android:onClick="conver"
+                        android:text="convertir"
+                        tools:ignore="OnClick" />
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tabArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/lblTipo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="100dp"
+                        android:text="TIPO:"/>
+                    <Spinner
+                        android:id="@+id/spnTipo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="100dp"
+                        android:entries="@array/tipo" />
+
+                    <TextView
+                        android:id="@+id/lblDe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="160dp"
+                        android:text="DE:"/>
+                    <Spinner
+                        android:id="@+id/spnDe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="160dp" />
+
+                    <TextView
+                        android:id="@+id/lbla"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="220dp"
+                        android:text="A:"/>
+                    <Spinner
+                        android:id="@+id/spna"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="220dp" />
+
+                    <TextView
+                        android:id="@+id/lblcantidad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="280dp"
+                        android:text="Cantidad:"/>
+                    <EditText
+                        android:id="@+id/txtcantidad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="270dp"
+                        android:layout_marginLeft="110dp"
+                        android:hint="Cantidad"/>
+                    <Button
+                        android:id="@+id/btnConvertir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="340dp"
+                        android:text="Convertir"/>
+                    <TextView
+                        android:id="@+id/lblrespuesta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Respuesta: ?"
+                        android:layout_marginTop="400dp"
+                        android:layout_marginLeft="40dp"/>
+
+
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

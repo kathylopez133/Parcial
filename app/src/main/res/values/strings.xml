@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Parcial</string>
+    <string-array name="tipo">
+        <item>Area</item>
+
+
+    </string-array>
+</resources>
